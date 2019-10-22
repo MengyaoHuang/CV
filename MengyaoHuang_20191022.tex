@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Amlaan Bhoi
+% Adapted from: Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+    urlcolor=blue
+}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\usepackage[
+top    = 2.75cm,
+bottom = 2.75cm,
+left   = 1.20cm,
+right  = 1.20cm]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \small \textbf{{\LARGE Mengyao Huang}} \\    
+  1929 Plymouth Road APT 4027, Ann Arbor, MI 48105 \\
+  (+1) (734) 263-3205 $\vert$ huangmy@umich.edu $\vert$ Github: \href{https://github.com/MengyaoHuang}{https://github.com/MengyaoHuang}
+\end{center}
+
+% $\vert$ Github: \href{https://github.com/MengyaoHuang}
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+   \resumeSubHeadingListStart
+    \resumeSubheading{University of Michigan}{Ann Arbor, MI}{Department of Mathematics}\hfill
+    \vspace{-18pt}
+    \resumeSubheading{}{}{Master of Science in Quantitative Finance and Risk Management \&
+      Data Science Certificate Program;  GPA: 3.6/4}{Sept. 2017 - May. 2019}{        
+      \resumeItemNoBullet{Relevant Courses}{Stochastic Analysis, Statistical Learning, Data Mining, Machine Learning, AI Foundations, Data  Manipulation and Analysis, Financial Mathematics, Computational Finance, Special Topics in Marketing(Doctoral), Quantitative Research in Marketing(Doctoral)}
+    }
+    \vspace{6pt}
+    
+    \resumeSubheading{Dalian University of Technology}{Dalian, China}{School of Mathematical Sciences}\hfill
+    \vspace{-18pt}
+    \resumeSubheading{}{}{Bachelor of Science in Mathematics and Applied Mathematics \& 
+      	Bachelor of Science in Finance;  GPA: 3.6/4}{Sept. 2013 - Jun. 2017}
+	 \resumeItemNoBullet{Relevant Courses}{Calculus, Advanced Algebra, Ordinary Differential Equations, Optimization Methods, Complex Analysis, Real Analysis, Functional Analysis, Multivariate Statistical Analysis, Time Series Analysis, Game Theory, Econometrics}
+   \resumeSubHeadingListEnd
+\vspace{8pt}
+
+
+%-----------RESEARCH INTERESTS---------
+\shorterSection{Research Interests}
+    \resumeSubHeadingListStart
+   % \resumeItemNoBullet{}
+   \hspace{-12pt}
+   {\small \sl Machine Learning and Statistical Learning in Marketing Research, Recommendation System}
+     \resumeSubHeadingListEnd
+\vspace{0pt}
+
+%-----------Research Experience-----------------
+\shorterSection{Research and Working Projects}
+  \resumeSubHeadingListStart
+%%%% Research Experience 1 %%%%
+      \resumeSubItem{Marketing Research}{Advisor: Fred M.Feinberg
+		   \hspace{270pt}
+	 {\textit{May. 2018 - present} \par}
+	 % Add a summary for research tools here
+	 {\sl \textbf{Topics}: Data Preprocessing, Machine Learning Algorithms, Bayesian Inference, Matrix Factorization, Choice Model}
+      \begin{itemize}
+      % Models: clustering/classification
+      % Research tools: Python Pandas; Python ggplot and matplotlib
+      % working project:
+      \item Integrated databases and performed data cleaning with Python Pandas including outliers filtering, missing data imputation, categories reduction, dummy variables creation and data normalization
+      \item Operated data visualization for CRM database with Python ggplot and matplotlib; calculated statistical metrics for further inference
+      \item Implemented customer clustering/classification algorithm for CRM database with K-means, K-modes (GOWER distance based), Random Forest and Naive Bayes in Python and package "MatchIt" in R
+      \vspace{8pt}
+      \item Learned \textbf{Bayesian Mixture Model}, \textbf{EM Algorithm}, \textbf{Gibbs Sampling} and \textbf{Multinomial Logit Model} with mixed effect
+      \item Implemented Multinomial Logit Model, \textbf{Nested Logit Model} (with/without cross validation), \textbf{Linear Mixed Effects Model} and \textbf{PCA} analysis with R and Python scikit-learn \& mnlogit
+      \vspace{8pt}
+	  \item Implemented \textbf{Variational Inference} with Normalizing Flows algorithm (Rezende \& Mohamed, 2016) in Python with MNIST dataset
+	  \item Wrote literature review abstract related to Low-rank \textbf{Matrix Approximation}, \textbf{Latent Factors Interpretation} and \textbf{Recommendation System}; implemented \textbf{Bayesian Matrix Factorization} (with/without side information) in Python with MovieLens dataset
+	  \item Implemented \textbf{Variational Autoencoder} and \textbf{Gaussian Mixture Model} in Pyro (with/without Poutine library)
+	  \vspace{8pt}
+	  \item Performed \textbf{Discrete Choice Model} analysis in the context of Choice Set Formation (Salisbury \& Feinberg, 2012; Bruth et al., 2016); helped with R package \textbf{DCmods} modification, output aggregation and visualization
+      \end{itemize}
+      
+    {\sl \textbf{Working Projects}:}
+    \begin{itemize}
+        \item  Construction and interpretation of DCmods vignettes
+        \item  Variational Autoencoder application in data fusion and Unbiased Implicit VI implementation
+        \item  Matrix Factorization application in marketing data imputation
+    \end{itemize}
+  }
+
+
+%%%% Research Experience 2 %%%%
+      \resumeSubItem{Social Structure research in Strategy}{Advisor: Michael Jensen
+                   \hspace{210pt}
+	  {\textit{Mar. 2019 - present} \par}
+      {\sl \textbf{Topics}: Web Scraping and Data Integration, Selenium Automation Testing, Natural Language Processing}
+        \begin{itemize}
+            \item Performed web scraping (IMDb, Wikipedia, BookMyShow, Box Office Mojo and etc) to collect seasonality info and film directors' demographic info, trivia \& images with Python Pandas \& Beautiful Soup and VBA in Excel
+            \item Collected user/critic ratings and comments for films; implemented transparent text analysis with Linguistic Inquiry and Word Count (LIWC) and Topic Modeling with Python scikit-learn (Latent Dirichlet Allocation)
+            \item Set up scraping program through Selenium driver to automate login \& searching process; collected rankings of casts and directors by DOM and HTML parsing and Text pattern matching
+        \end{itemize}
+     }
+
+%%%% Research Experience 3 %%%%
+    \resumeSubItem{Optimization in Principal-Agent Problem}{Advisor: Nicolas Hernandez
+                    \hspace{169pt}
+	  {\textit{Nov. 2017 - Oct. 2018}}
+	  \vspace{-5pt}
+        \begin{itemize}
+      \item Implemented nonpolynomial approach of actions related agent's utility maximization problem (Renner \& Schmedders, 2015)
+	\item Tested algorithm efficiency and global optimality with both MATLAB GloptiPoly and modified fmincon method
+	\end{itemize}
+	}
+	
+%%%% Research Experience 4 %%%%
+\resumeSubItem{Optimization in Asset Liability Management}{Advisor: Guotai Chi
+                    \hspace{185pt}
+	  {\textit{Nov. 2015 - Jun. 2017}}
+	  \vspace{-5pt}
+        \begin{itemize}
+      \item Implemented optimization algorithm of worst-case Conditional Value-at-Risk(WCVaR) under mixture distribution and kernel density estimation (Zhu \& Fukushima, 2009) with MATLAB
+	\item Modified robust portfolio optimization by introducing credit rating transition matrix
+	\end{itemize}
+	}
+
+%%%% Research Experience 5 %%%%
+\resumeSubItem{Complex Ecosystem Evolution Model}{Advisor: Qiuhui Pan
+                    \hspace{210pt}
+	  {\textit{Mar. 2015 - May. 2016}}
+	  \vspace{-5pt}
+        \begin{itemize}
+      \item Introduced external factors like water distribution to complex ecosystem; adopted Partial Differential Equations to measure energy flow and implemented dynamic Monte Carlo (DMC) simulation with MATLAB
+	\end{itemize}
+	}
+  \resumeSubHeadingListEnd
+\vspace{8pt}
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Professional Experience}
+  \resumeSubHeadingListStart
+   %%%%% Experience 1 %%%%%
+      \resumeSubheading
+    {Washtenaw Community College} {Ann Arbor, MI}
+    {Research Analyst in Institutional Research and Analytics Dept}{Aug. 2019 - present}
+\resumeItemNoBullet{Mentor}{Mourad Roger}
+    \begin{itemize}
+        \item Updated databases \& annual reports using Microsoft Access and Power BI
+  	    \item Conducted \textbf{Excess Credits Research} in community college system by examining credits distributions in the context of particular degree programs (Zeidenberg, 2012); further improved accuracy by considering transferred credits and candidates with more degrees
+  \end{itemize}
+
+ %%%%% Experience 2 %%%%%
+    	\resumeSubheading
+      {BOHAI Securities Co., Ltd}{Tianjin, China}
+      {Researcher in Quantitative Trading Division}{Jul. 2016 - Aug. 2016}
+        \begin{itemize}
+          \item Improved stock price cycles estimation by implementing weighted Fourier Transform algorithm; strengthened the performance of quantitative timing model by adopting year-on-year series and adjusting tuning parameters including length of subsequences
+      \end{itemize}
+      
+ %%%%% Experience 3 %%%%%
+      	\resumeSubheading
+      {AXA Group, Hong Kong Branch}{Hong Kong, China}
+      {Assistant Analyst in Market Research Department}{Jan. 2016 - Feb. 2016}
+        \begin{itemize}
+          \item Developed trading strategies based on Fundamental Analysis and indicators including MACD, KDJ, SAR and price-volume relationship
+        	\item 
+          {Analyzed financial time series in EViews; applied multivariate linear regression model and GARCH model to predict Hang Seng Index
+          }
+      \end{itemize}
+  \resumeSubHeadingListEnd
+\vspace{8pt}
+
+%--------Other Activities-----------
+\shorterSection{Honors and Activities}
+\resumeSubHeadingListStart
+    \vspace{-8pt}
+    \resumeSubheading
+    {}{}{Third prize in National Mathematical Modeling Contest}{Nov. 2015}
+    \vspace{-15pt}
+    \resumeSubheading
+    {}{}{First prize in Mathematical Contest in Modeling in Northeastern China (Top 5\%)}{May. 2015}
+    \vspace{-15pt}
+    \resumeSubheading
+    {}{}{DUT Technological Innovation Award (Top 5 out of 180)}{Oct. 2014}
+    \vspace{-10pt}
+    
+    \resumeSubheading
+    {}{}{President of DUT Mathematical Modeling Association}{Sept. 2015 - Sept. 2016}
+    \vspace{-15pt}
+    \resumeSubheading
+    {}{}{(DUT Outstanding Student Association Award)}{May. 2016}
+    \vspace{-15pt}
+    \resumeSubheading
+    {}{}{Certificate of DUT Innovation Practice Training 3-year Program (Mathematical Modeling track)}{Jul. 2016}
+    \vspace{-15pt}
+    \resumeSubheading
+    {}{}{Certificate of Qualification in AXA SL financial Group of ZhuoHao Business School}{Feb. 2016}
+
+\resumeSubHeadingListEnd
+\vspace{8pt}
+
+%-----------Personal-----------------
+\shorterSection{Personal}
+  \resumeSubHeadingListStart
+  \small
+    \item
+     \textbf{Languages}{: Mandarin Chinese (native), English (TOEFL iBT: 105, GRE: 325+4.5)}
+     \vspace{-5pt}
+    \item
+     \textbf{Skills}{: Fluent in Python, Pytorch-Pyro, R, MATLAB and C++/C;  intermediate in SQL, Stan, Microsoft Access, and EViews}
+     \vspace{-5pt}
+    \item
+     \textbf{Interests}{: Sketch, Play squash, Social psychology(recent)}
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
